@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>News</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
+    <style>
+        #shareSelect{
+    font-size: 20px; /* Inherit font size */
+        font-family: inherit; /* Inherit font family */
+        cursor: pointer; /* Show pointer cursor on hover */
+        outline: none; 
+        color: black;
+        box-shadow:3px 5px blue;
+}
+#shareSelect:hover{
+    background-color: black;
+        color:white;
+}
+.share-button{
+    padding-left: 790px;
+}
+    </style>
+</head>
+<body>
+    
+    <section class="section">
+        <div class="container">
+            <div class="rows">
+                <div class="column is-offset-16 is-10">
+                    {% for title, desc, i in mylist %}
+                    <div class="box">
+                        <article class="media">
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <span class="title">{{ title }}</span>
+                                        <br>
+                                        <img src="{{ i }}" alt="">
+                                        <span class="subtitle">{{ desc }}</span>
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <div class="share-button">
+                            <select id="shareSelect" onchange="shareOption()">
+                                <option value="default">Share</option>
+                                <option value="whatsapp">WhatsApp</option>
+                                <option value="gmail">Gmail</option>
+                                <option value="copy">Copy Link</option>
+                            </select>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    </footer>
+    <script>
+        function shareOption() {
+        var selectElement = document.getElementById('shareSelect');
+        var selectedOption = selectElement.value;
+        
+        switch (selectedOption) {
+            case 'whatsapp':
+                shareWhatsApp();
+                break;
+            case 'gmail':
+                shareGmail();
+                break;
+            case 'copy':
+                copyLink();
+                break;
+            default:
+                // Do nothing or provide a message indicating that an option should be selected
+                break;
+        }
+    }
+    
+    function shareWhatsApp() {
+        // Replace 'YOUR_SHARE_URL' with the actual URL you want to share
+        var shareUrl = 'YOUR_SHARE_URL';
+        var whatsappUrl = 'whatsapp://send?text=' + encodeURIComponent(shareUrl);
+        window.location.href = whatsappUrl;
+    }
+    
+    function shareGmail() {
+        // Replace 'YOUR_SHARE_URL' with the actual URL you want to share
+        var shareUrl = 'YOUR_SHARE_URL';
+        var gmailUrl = 'mailto:?subject=Check out this link&body=' + encodeURIComponent(shareUrl);
+        window.location.href = gmailUrl;
+    }
+    
+    function copyLink() {
+        // Replace 'YOUR_SHARE_URL' with the actual URL you want to copy
+        var shareUrl = 'YOUR_SHARE_URL';
+        
+        // Copy the URL to clipboard
+        navigator.clipboard.writeText(shareUrl)
+            .then(() => {
+                alert('Link copied to clipboard!');
+            })
+            .catch(err => {
+                console.error('Error copying link to clipboard:', err);
+            });
+    }
+      
+      </script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
+    <title>DAILY_NEWS</title>
+    <style>
+        body{
+            color: black;
+            background-color:white;
+            overflow: hidden;
+        }
+        .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar {
+    position:absolute;
+    top: 0;
+    left: 0px;
+right:25px;
+    width: 200px; 
+    padding-right: 10px;
+    padding-top: 1px;
+    color: black;
+}
+.content {
+    margin-left: 220px; 
+}
+.content img {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height:70%;
+    padding-top: 50px;
+    padding-right: 90px;
+}
+button {
+        background-color: transparent; /* Transparent background */
+        border-radius:5px; /* No border */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margin */
+        font-size: 25px; /* Inherit font size */
+        font-family: inherit; /* Inherit font family */
+        cursor: pointer; /* Show pointer cursor on hover */
+        outline: none; 
+        color: black;
+        box-shadow:3px 5px blue;
+    }   
+    
+a {
+    text-shadow: 2px 2px 4px yellow;
+        text-decoration: none;
+        color: black;
+        font:bold;
+        font-size: 30px;
+    }
+    a:hover{
+        background-color: black;
+        color:white;
+        border-radius: 5px;
+    }
+    table{
+        padding-left: 10px;
+        top:55px;
+        right:30px;
+        border: 2px solid black;
+        width:200px;
+    }
+    td {
+        padding: 5px; /* Add padding to cells for spacing */
+        /*border: 1px solid white; Add borders to cells */
+    } 
+    #pic{
+        width:400px;
+        height:200px;
+        padding-right: 450px;
+    }
+    header{
+        font-size:50px;
+        padding-left: 550px;
+        text-transform:capitalize;
+        text-decoration: underline;
+        font-family: "Arial", sans-serif;
+        font-weight: bold;
+        color:red;
+        padding-bottom:20px;
+        padding-top: 20px;
+        border:2px solid black;
+        box-shadow: 2px 3px black;
+}
+h1{
+    text-shadow: 2px 2px 4px yellow;
+}
+#shareSelect{
+    font-size: 20px; /* Inherit font size */
+        font-family: inherit; /* Inherit font family */
+        cursor: pointer; /* Show pointer cursor on hover */
+        outline: none; 
+        color: black;
+        box-shadow:3px 5px blue;
+}
+#shareSelect:hover{
+    background-color: black;
+        color:white;
+}
+.share-button{
+    padding-left: 790px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i>NewsSphere</i></h1>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <table>
+                <tr><td><button type="submit"><a href="{% url 'animal' %}" target="_blank">Animals</a></button></td></tr>
+                <tr><td><button type="submit"><a href="{% url 'business' %}" target="_blank">Business</a></button></td></tr> 
+                <tr><td><button type="submit"><a href="{% url 'education' %}" target="_blank">Education</a></button></td></tr>
+                <tr><td><button type="submit"><a href="{% url 'entertainment' %}" target="_blank">Entertainment</a></button></td></tr>
+                <tr><td><button type="submit"><a href="{% url 'hollywood' %}" target="_blank">Hollywood</a></button></td></tr>
+                <tr><td><button type="submit"><a href="{% url 'tollywood' %}" target="_blank">Tollywood</a></button></td></tr>
+                <tr><td><button type="submit"><a href="{% url 'technology' %}" target="_blank">Technology</a></button></td></tr>
+                <tr><td><button type="submit"><a href="{% url 'life_style' %}" target="_blank">Life_Style</a></button></td></tr>
+                <tr><td><button type="submit"><a href="{% url 'food' %}" target="_blank">Food</a></button></td></tr>
+                <tr><td><button type="submit"><a href="{% url 'health' %}" target="_blank">Health</a></button></td></tr>
+                <tr><td><button type="submit"><a href="{% url 'world' %}" target="_blank">World</a></button></td></tr>
+                <tr><td><button type="submit"><a href="{% url 'sports' %}" target="_blank">Sports</a></button></td></tr>
+                <tr><td><button type="submit"><a href="{% url 'weather' %}" target="_blank">Weather</a></button></td></tr>
+                <tr><td><button type="submit"><a href="{% url 'pollution' %}" target="_blank">Pollution</a></button></td></tr>
+                <tr><td><button type="submit"><a href="{% url 'science' %}" target="_blank">Science</a></button></td></tr>
+                <tr><td><button type="submit"><a href="{% url 'fashion' %}" target="_blank">Fashion</a></button></td></tr>
+                <tr><td><button type="submit"><a href="{% url 'crime' %}" target="_blank">Crime</a></button></td></tr>
+                <tr><td><button type="submit"><a href="{% url 'students' %}" target="_blank">Student</a></button></td></tr>
+            </table>
+        </div>
+    </div>
+        <br>
+        <div class="content">
+             <section class="section">
+                 <div class="container">
+                     <div class="rows">
+                         <div class="column is-offset-16 is-10">
+                             {% for title, desc, i in mylist %}
+                             <div class="box">
+                                 <article class="media">
+                                     <div class="media-content">
+                                         <div class="content">
+                                             <p>
+                                                 <span class="title">{{ title }}</span>
+                                                 <br>
+                                                 <!-- <img id="pic" src="{{ i }}" alt=""> -->
+                                                 <span class="subtitle">{{ desc }}</span>  
+                                             </p>
+                                         </div>
+                                     </div>
+                                 </article>
+    <div class="share-button">
+    <select id="shareSelect" onchange="shareOption()">
+        <option value="default">Share</option>
+        <option value="whatsapp">WhatsApp</option>
+        <option value="gmail">Gmail</option>
+        <option value="copy">Copy Link</option>
+    </select>
+</div>
+                             </div>
+                             {% endfor %}
+                         </div>
+                     </div>
+                 </div>
+             </section>
+        </div>
+  <script>
+    function shareOption() {
+    var selectElement = document.getElementById('shareSelect');
+    var selectedOption = selectElement.value;
+    
+    switch (selectedOption) {
+        case 'whatsapp':
+            shareWhatsApp();
+            break;
+        case 'gmail':
+            shareGmail();
+            break;
+        case 'copy':
+            copyLink();
+            break;
+        default:
+            break;
+    }
+}
+function shareWhatsApp() {
+    var shareUrl = 'YOUR_SHARE_URL';
+    var whatsappUrl = 'whatsapp://send?text=' + encodeURIComponent(shareUrl);
+    window.location.href = whatsappUrl;
+}
+function shareGmail() {
+    var shareUrl = 'YOUR_SHARE_URL';
+    var gmailUrl = 'mailto:?subject=Check out this link&body=' + encodeURIComponent(shareUrl);
+    window.location.href = gmailUrl;
+}
+function copyLink() {
+    var shareUrl = 'YOUR_SHARE_URL';
+    navigator.clipboard.writeText(shareUrl)
+        .then(() => {
+            alert('Link copied to clipboard!');
+        })
+        .catch(err => {
+            console.error('Error copying link to clipboard:', err);
+        });
+}
+  </script>
+</body>
+</html>

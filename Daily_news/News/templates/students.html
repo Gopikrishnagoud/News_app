@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Students</title>
+   <style>
+    #help{
+        font-size: 20px;
+    }
+body{
+      overflow:scroll;
+    }
+    ul{
+  width:200px;
+      }
+            img{
+       width:1350px;
+   height:670px;
+}
+.overlay-text1 {
+   position: absolute;
+   top: 2%;
+   left:10px;
+   backdrop-filter:blur(10px);
+   /* box-shadow: inset 0px 0px 50px ;*/
+   border-radius:10px;
+}
+.overlay-text2 {
+   position: absolute;
+   top: 7%;
+   left: 350px;
+   right:15px;
+   width:1100px;
+   height:550px;
+   border-radius:10px;
+   justify-items:center;
+   border: orangered;
+}
+#t1{
+            border-collapse: collapse;
+            width: 1100px;
+        th, td {
+            padding: 5px; /* Adjust the padding */
+            font-size: 30px; /* Adjust the font size */
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+} 
+button {
+        border-radius:5px; /* No border */
+        padding: 8px; /* Remove padding */
+        margin: 5px; /* Remove margin */
+        font-size: 25px; /* Inherit font size */
+        font-family: inherit; /* Inherit font family */
+        cursor: pointer; /* Show pointer cursor on hover */
+        outline: none; 
+        color: black;
+        box-shadow:3px 5px blue;
+    } 
+    button:hover{
+        background-color:blue;
+        color:white;
+        border-radius:5px; /* No border */
+        padding: 8px; /* Remove padding */
+        margin: 5px; /* Remove margin */
+        font-size: 25px; 
+        cursor: pointer; 
+        box-shadow:3px 5px yellow;
+    }
+#t2{
+    width: 200px;   
+}
+#t3{
+    width:500px;
+    button{
+        width: 200px;
+    }
+}
+label{
+    font-size: 25px;
+}
+input{
+    font-size: 25px;
+}
+textarea{
+    font-size: 25px;
+}
+   </style>
+</head>
+<body>
+ <div class="overlay-text1">
+    <table id="t2">
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-1">President</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-2">Prime Ministers</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-3">States and Captials of india</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-4">Cabinet Ministers of India</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-5">Cheif Ministers of India(2024)</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-6">Governors of India</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-7">Programming</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-8">Geography</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-9">Biology</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-10">Chemistry</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-11">physics</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-12">History</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-13">Sports</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-14">Help</button></td></tr>
+<!-- <tr><td><button  id="play-button1"  class="nav-button"  data-content="content-15"></button></td></tr>  -->
+
+</table>
+</div>
+ <div class="overlay-text2">
+     <div id="content-8" class="content-item">
+        <h2>Geograph Quiz</h2>
+        
+<table id="t1">
+    <tr>
+        <th>Question</th>
+        <th>Answer</th>
+    </tr>
+    <tr>
+        <td>What is the capital of Canada?</td>
+        <td>Ottawa</td>
+    </tr>
+    <tr>
+        <td>What is the longest river in the world?</td>
+        <td>The Nile</td>
+    </tr>
+    <tr>
+        <td>Which desert is the largest in the world?</td>
+        <td>The Sahara Desert</td>
+    </tr>
+    <tr>
+        <td>What country has the most natural lakes?</td>
+        <td>Canada</td>
+    </tr>
+    <tr>
+        <td>In which continent is the Amazon Rainforest located?</td>
+        <td>South America</td>
+    </tr>
+    <tr>
+        <td>What is the smallest country in the world?</td>
+        <td>Vatican City</td>
+    </tr>
+    <tr>
+        <td>Mount Everest is located in which mountain range?</td>
+        <td>The Himalayas</td>
+    </tr>
+    <tr>
+        <td>What is the capital city of Australia?</td>
+        <td>Canberra</td>
+    </tr>
+    <tr>
+        <td>Which country is known as the Land of the Rising Sun?</td>
+        <td>Japan</td>
+    </tr>
+    <tr>
+        <td>The Great Barrier Reef is off the coast of which Australian state?</td>
+        <td>Queensland</td>
+    </tr>
+    <tr>
+        <td>What is the longest river in the USA?</td>
+        <td>The Missouri River</td>
+    </tr>
+    <tr>
+        <td>Which U.S. state is known as the "Sunshine State"?</td>
+        <td>Florida</td>
+    </tr>
+    <tr>
+        <td>What is the capital of Italy?</td>
+        <td>Rome</td>
+    </tr>
+    <tr>
+        <td>What is the largest island in the Mediterranean Sea?</td>
+        <td>Sicily</td>
+    </tr>
+    <tr>
+        <td>Which country is Prague in?</td>
+        <td>Czech Republic</td>
+    </tr>
+    <tr>
+        <td>What river runs through Baghdad?</td>
+        <td>Tigris River</td>
+    </tr>
+    <tr>
+        <td>What is the largest country in Africa by area?</td>
+        <td>Algeria</td>
+    </tr>
+    <tr>
+        <td>Which two countries share the longest international border?</td>
+        <td>Canada and the United States</td>
+    </tr>
+    <tr>
+        <td>What city is the Statue of Liberty in?</td>
+        <td>New York City</td>
+    </tr>
+    <tr>
+        <td>What is the capital of New Zealand?</td>
+        <td>Wellington</td>
+    </tr>
+</table>
+
+     </div>
+     <div id="content-3" class="content-item">
+        <h2>States and Capitals of India</h2>
+        <table id="t1">
+            <tr>
+                <th>State</th>
+                <th>Capital</th>
+            </tr>
+            <tr>
+                <td>Andhra Pradesh</td>
+                <td>Amaravati</td>
+            </tr>
+            <tr>
+                <td>Arunachal Pradesh</td>
+                <td>Itanagar</td>
+            </tr>
+            <tr>
+                <td>Assam</td>
+                <td>Dispur</td>
+            </tr>
+            <tr>
+                <td>Bihar</td>
+                <td>Patna</td>
+            </tr>
+            <tr>
+                <td>Chhattisgarh</td>
+                <td>Raipur</td>
+            </tr>
+            <tr>
+                <td>Goa</td>
+                <td>Panaji</td>
+            </tr>
+            <tr>
+                <td>Gujarat</td>
+                <td>Gandhinagar</td>
+            </tr>
+            <tr>
+                <td>Haryana</td>
+                <td>Chandigarh</td>
+            </tr>
+            <tr>
+                <td>Himachal Pradesh</td>
+                <td>Shimla</td>
+            </tr>
+            <tr>
+                <td>Jharkhand</td>
+                <td>Ranchi</td>
+            </tr>
+            <tr>
+                <td>Karnataka</td>
+                <td>Bengaluru</td>
+            </tr>
+            <tr>
+                <td>Kerala</td>
+                <td>Thiruvananthapuram</td>
+            </tr>
+            <tr>
+                <td>Madhya Pradesh</td>
+                <td>Bhopal</td>
+            </tr>
+            <tr>
+                <td>Maharashtra</td>
+                <td>Mumbai</td>
+            </tr>
+            <tr>
+                <td>Manipur</td>
+                <td>Imphal</td>
+            </tr>
+            <tr>
+                <td>Meghalaya</td>
+                <td>Shillong</td>
+            </tr>
+            <tr>
+                <td>Mizoram</td>
+                <td>Aizawl</td>
+            </tr>
+            <tr>
+                <td>Nagaland</td>
+                <td>Kohima</td>
+            </tr>
+            <tr>
+                <td>Odisha</td>
+                <td>Bhubaneswar</td>
+            </tr>
+            <tr>
+                <td>Punjab</td>
+                <td>Chandigarh</td>
+            </tr>
+            <tr>
+                <td>Rajasthan</td>
+                <td>Jaipur</td>
+            </tr>
+            <tr>
+                <td>Sikkim</td>
+                <td>Gangtok</td>
+            </tr>
+            <tr>
+                <td>Tamil Nadu</td>
+                <td>Chennai</td>
+            </tr>
+            <tr>
+                <td>Telangana</td>
+                <td>Hyderabad</td>
+            </tr>
+            <tr>
+                <td>Tripura</td>
+                <td>Agartala</td>
+            </tr>
+            <tr>
+                <td>Uttar Pradesh</td>
+                <td>Lucknow</td>
+            </tr>
+            <tr>
+                <td>Uttarakhand</td>
+                <td>Dehradun</td>
+            </tr>
+            <tr>
+                <td>West Bengal</td>
+                <td>Kolkata</td>
+            </tr>
+        </table>
+     </div>
+     <div id="content-12" class="content-item">
+        <h2>History Quiz</h2>
+
+        <table id="t1">
+            <tr>
+                <th>Question</th>
+                <th>Answer</th>
+            </tr>
+            <tr>
+                <td>Who was the first President of the United States?</td>
+                <td>George Washington</td>
+            </tr>
+            <tr>
+                <td>In which year did the Titanic sink?</td>
+                <td>1912</td>
+            </tr>
+            <tr>
+                <td>Who wrote the Declaration of Independence?</td>
+                <td>Thomas Jefferson</td>
+            </tr>
+            <tr>
+                <td>What was the name of the first man-made satellite to orbit the Earth?</td>
+                <td>Sputnik</td>
+            </tr>
+            <tr>
+                <td>Which war ended with the Treaty of Versailles in 1919?</td>
+                <td>World War I</td>
+            </tr>
+            <tr>
+                <td>Who was known as the 'Maid of Orleans'?</td>
+                <td>Joan of Arc</td>
+            </tr>
+            <tr>
+                <td>What ancient civilization built the Machu Picchu complex in Peru?</td>
+                <td>The Incas</td>
+            </tr>
+            <tr>
+                <td>Who discovered penicillin?</td>
+                <td>Alexander Fleming</td>
+            </tr>
+            <tr>
+                <td>The Great Wall of China was primarily built by which dynasty?</td>
+                <td>The Ming Dynasty</td>
+            </tr>
+            <tr>
+                <td>Who was the first woman to win a Nobel Prize (in 1903)?</td>
+                <td>Marie Curie</td>
+            </tr>
+            <tr>
+                <td>What year did the Berlin Wall fall?</td>
+                <td>1989</td>
+            </tr>
+            <tr>
+                <td>Which country gifted the Statue of Liberty to the United States?</td>
+                <td>France</td>
+            </tr>
+            <tr>
+                <td>Who was the Egyptian queen who had a relationship with Roman generals Julius Caesar and Mark Antony?</td>
+                <td>Cleopatra</td>
+            </tr>
+            <tr>
+                <td>When did the Roman Empire fall?</td>
+                <td>476 AD</td>
+            </tr>
+            <tr>
+                <td>Who was the first emperor of China?</td>
+                <td>Qin Shi Huang</td>
+            </tr>
+            <tr>
+                <td>What year did the United States declare independence?</td>
+                <td>1776</td>
+            </tr>
+            <tr>
+                <td>In which country did the Industrial Revolution begin?</td>
+                <td>Great Britain</td>
+            </tr>
+            <tr>
+                <td>Who was the leader of the Nazi Party?</td>
+                <td>Adolf Hitler</td>
+            </tr>
+            <tr>
+                <td>Which famous leader was assassinated by his friend Brutus?</td>
+                <td>Julius Caesar</td>
+            </tr>
+            <tr>
+                <td>Who was the first human to journey into space?</td>
+                <td>Yuri Gagarin</td>
+            </tr>
+        </table>
+     </div>
+     <div id="content-13" class="content-item">
+        <h2>Sports Quiz</h2>
+
+        <table id="t1">
+            <tr>
+                <th>Question</th>
+                <th>Answer</th>
+            </tr>
+            <tr>
+                <td>What is the national sport of Japan?</td>
+                <td>Sumo Wrestling</td>
+            </tr>
+            <tr>
+                <td>Which country won the first ever FIFA World Cup in 1930?</td>
+                <td>Uruguay</td>
+            </tr>
+            <tr>
+                <td>Who holds the record for the most Grand Slam titles in tennis?</td>
+                <td>Margaret Court</td>
+            </tr>
+            <tr>
+                <td>What is the highest possible score in a single frame of bowling?</td>
+                <td>30 points</td>
+            </tr>
+            <tr>
+                <td>In what year were women first allowed to participate in the modern Olympic Games?</td>
+                <td>1900</td>
+            </tr>
+            <tr>
+                <td>Which sport is known as the 'king of sports'?</td>
+                <td>Soccer (Football)</td>
+            </tr>
+            <tr>
+                <td>Who is known as the fastest man in the world?</td>
+                <td>Usain Bolt</td>
+            </tr>
+            <tr>
+                <td>What sport is played at Wimbledon?</td>
+                <td>Tennis</td>
+            </tr>
+            <tr>
+                <td>How many players are there in a rugby league team?</td>
+                <td>13 players</td>
+            </tr>
+            <tr>
+                <td>What is the term used when a golfer scores one under par on a hole?</td>
+                <td>Birdie</td>
+            </tr>
+            <tr>
+                <td>In baseball, what is it called when a batter gets three strikes?</td>
+                <td>A strikeout</td>
+            </tr>
+            <tr>
+                <td>What is the only sport to be played on the moon?</td>
+                <td>Golf</td>
+            </tr>
+            <tr>
+                <td>What sport is known as 'America's pastime'?</td>
+                <td>Baseball</td>
+            </tr>
+            <tr>
+                <td>Which country invented table tennis?</td>
+                <td>England</td>
+            </tr>
+            <tr>
+                <td>What is the maximum number of clubs a golfer is allowed in their bag during a round?</td>
+                <td>14 clubs</td>
+            </tr>
+            <tr>
+                <td>In basketball, how many points is a shot from beyond the three-point line worth?</td>
+                <td>Three points</td>
+            </tr>
+            <tr>
+                <td>Which country hosts the annual Formula One Grand Prix in the city of Monaco?</td>
+                <td>Monaco</td>
+            </tr>
+            <tr>
+                <td>What color are the goalposts in American football?</td>
+                <td>Yellow</td>
+            </tr>
+            <tr>
+                <td>What is the national sport of Canada?</td>
+                <td>Lacrosse (summer) and Ice Hockey (winter)</td>
+            </tr>
+            <tr>
+                <td>In which sport would you perform the Fosbury Flop?</td>
+                <td>High Jump</td>
+            </tr>
+        </table>
+     </div> 
+     <div id="content-4" class="content-item">
+        <h2>Cabinet Ministers</h2>
+
+        <table id="t1">
+            <tr>
+                <th>Minister</th>
+                <th>Portfolio</th>
+            </tr>
+            <tr>
+                <td>Shri Raj Nath Singh</td>
+                <td>Minister of Defence</td>
+            </tr>
+            <tr>
+                <td>Shri Amit Shah</td>
+                <td>Minister of Home Affairs; and Minister of Cooperation</td>
+            </tr>
+            <tr>
+                <td>Shri Nitin Jairam Gadkari</td>
+                <td>Minister of Road Transport and Highways</td>
+            </tr>
+            <tr>
+                <td>Smt. Nirmala Sitharaman</td>
+                <td>Minister of Finance; and Minister of Corporate Affairs</td>
+            </tr>
+            <tr>
+                <td>Shri Arjun Munda</td>
+                <td>Minister of Agriculture and Farmers’ Welfare; and Tribal Affairs</td>
+            </tr>
+            <tr>
+                <td>Dr. Subrahmanyam Jaishankar</td>
+                <td>Minister of External Affairs</td>
+            </tr>
+            <tr>
+                <td>Smt. Smriti Zubin Irani</td>
+                <td>Minister of Women and Child Development; and Minister of Minority Affairs</td>
+            </tr>
+            <tr>
+                <td>Shri Piyush Goyal</td>
+                <td>Minister of Commerce and Industry; Minister of Consumer Affairs, Food and Public Distribution; and Minister of Textiles</td>
+            </tr>
+            <tr>
+                <td>Shri Dharmendra Pradhan</td>
+                <td>Minister of Education; and Minister of Skill Development and Entrepreneurship</td>
+            </tr>
+            <tr>
+                <td>Shri Pralhad Joshi</td>
+                <td>Minister of Parliamentary Affairs; Minister of Coal; and Minister of Mines</td>
+            </tr>
+            <tr>
+                <td>Shri Narayan Tatu Rane</td>
+                <td>Minister of Micro, Small and Medium Enterprises</td>
+            </tr>
+            <tr>
+                <td>Shri Sarbananda Sonowal</td>
+                <td>Minister of AYUSH; Minister of Ports, Shipping and Waterways</td>
+            </tr>
+            <tr>
+                <td>Dr. Virendra Kumar</td>
+                <td>Minister of Social Justice and Empowerment</td>
+            </tr>
+            <tr>
+                <td>Shri Giriraj Singh</td>
+                <td>Minister of Rural Development; and Minister of Panchayati Raj</td>
+            </tr>
+            <tr>
+                <td>Shri Jyotiraditya M. Scindia</td>
+                <td>Minister of Civil Aviation; and Minister of Steel</td>
+            </tr>
+            <tr>
+                <td>Shri Ashwini Vaishnaw</td>
+                <td>Minister of Railways; Minister of Communications; and Minister of Electronics and Information Technology</td>
+            </tr>
+            <tr>
+                <td>Shri Pashu Pati Kumar Paras</td>
+                <td>Minister of Food Processing Industries</td>
+            </tr>
+            <tr>
+                <td>Shri Gajendra Singh Shekhawat</td>
+                <td>Minister of Jal Shakti</td>
+            </tr>
+            <tr>
+                <td>Shri Raj Kumar Singh</td>
+                <td>Minister of Power; and Minister of New and Renewable Energy</td>
+            </tr>
+            <tr>
+                <td>Shri Hardeep Singh Puri</td>
+                <td>Minister of Petroleum and Natural Gas; and Minister of Housing and Urban Affairs</td>
+            </tr>
+            <tr>
+                <td>Shri Mansukh Mandaviya</td>
+                <td>Minister of Health and Family Welfare; and Minister of Chemicals and Fertilizers</td>
+            </tr>
+            <tr>
+                <td>Shri Bhupender Yadav</td>
+                <td>Minister of Environment, Forest and Climate Change; and Minister of Labour and Employment</td>
+            </tr>
+            <tr>
+                <td>Dr. Mahendra Nath Pandey</td>
+                <td>Minister of Heavy Industries & Public Enterprises</td>
+            </tr>
+            <tr>
+                <td>Shri Parshottam Rupala</td>
+                <td>Minister of Fisheries, Animal Husbandry and Dairying</td>
+            </tr>
+            <tr>
+                <td>Shri G. Kishan Reddy</td>
+                <td>Minister of Culture; Minister of Tourism; and Minister of Development of North Eastern Region</td>
+            </tr>
+            <tr>
+                <td>Shri Anurag Singh Thakur</td>
+                <td>Minister of Information and Broadcasting; and Minister of Youth Affairs and Sports</td>
+            </tr>
+        </table>
+        
+     </div>
+     <div id="content-5" class="content-item">
+        <h2>Chief Ministers of Indian States</h2>
+
+        <table id="t1">
+            <tr>
+                <th>State/UT</th>
+                <th>Chief Minister</th>
+            </tr>
+            <tr>
+                <td>Andhra Pradesh</td>
+                <td>Shri YS Jagan Mohan Reddy</td>
+            </tr>
+            <tr>
+                <td>Arunachal Pradesh</td>
+                <td>Shri Pema Khandu</td>
+            </tr>
+            <tr>
+                <td>Assam</td>
+                <td>Shri Himanta Biswa Sarma</td>
+            </tr>
+            <tr>
+                <td>Bihar</td>
+                <td>Shri Nitish Kumar</td>
+            </tr>
+            <tr>
+                <td>Chhattisgarh</td>
+                <td>Shri Vishnu Deo Sai</td>
+            </tr>
+            <tr>
+                <td>Delhi (NCT)</td>
+                <td>Shri Arvind Kejriwal</td>
+            </tr>
+            <tr>
+                <td>Goa</td>
+                <td>Shri Pramod Sawant</td>
+            </tr>
+            <tr>
+                <td>Gujarat</td>
+                <td>Shri Bhupendra Patel</td>
+            </tr>
+            <tr>
+                <td>Haryana</td>
+                <td>Shri Nayab Singh Saini</td>
+            </tr>
+            <tr>
+                <td>Himachal Pradesh</td>
+                <td>Shri Sukhvinder Singh Sukhu</td>
+            </tr>
+            <tr>
+                <td>Jharkhand</td>
+                <td>Shri Champai Soren</td>
+            </tr>
+            <tr>
+                <td>Karnataka</td>
+                <td>Shri Siddaramaiah</td>
+            </tr>
+            <tr>
+                <td>Kerala</td>
+                <td>Shri Pinarayi Vijayan</td>
+            </tr>
+            <tr>
+                <td>Madhya Pradesh</td>
+                <td>Shri Mohan Yadav</td>
+            </tr>
+            <tr>
+                <td>Maharashtra</td>
+                <td>Shri Eknath Shinde</td>
+            </tr>
+            <tr>
+                <td>Manipur</td>
+                <td>Shri N. Biren Singh</td>
+            </tr>
+            <tr>
+                <td>Meghalaya</td>
+                <td>Shri Conrad Kongkal Sangma</td>
+            </tr>
+            <tr>
+                <td>Mizoram</td>
+                <td>Shri PU Lalduhoma</td>
+            </tr>
+            <tr>
+                <td>Nagaland</td>
+                <td>Shri Neiphiu Rio</td>
+            </tr>
+            <tr>
+                <td>Odisha</td>
+                <td>Shri Naveen Patnaik</td>
+            </tr>
+            <tr>
+                <td>Puducherry (UT)</td>
+                <td>Shri N. Rangaswamy</td>
+            </tr>
+            <tr>
+                <td>Punjab</td>
+                <td>Shri Bhagwant Singh Mann</td>
+            </tr>
+            <tr>
+                <td>Rajasthan</td>
+                <td>Shri Bhajan Lal Sharma</td>
+            </tr>
+            <tr>
+                <td>Sikkim</td>
+                <td>Shri PS Golay</td>
+            </tr>
+            <tr>
+                <td>Tamil Nadu</td>
+                <td>Shri M. K. Stalin</td>
+            </tr>
+            <tr>
+                <td>Telangana</td>
+                <td>Shri A Revanth Reddy</td>
+            </tr>
+            <tr>
+                <td>Tripura</td>
+                <td>Dr. Manik Saha</td>
+            </tr>
+            <tr>
+                <td>Uttar Pradesh</td>
+                <td>Shri Yogi Aditya Nath</td>
+            </tr>
+            <tr>
+                <td>Uttarakhand</td>
+                <td>Shri Pushkar Singh Dhami</td>
+            </tr>
+            <tr>
+                <td>West Bengal</td>
+                <td>Km. Mamata Banerjee</td>
+            </tr>
+        </table>
+     </div>
+     <div id="content-6" class="content-item">
+        <h2>State Governors</h2>
+
+        <table id="t1">
+            <tr>
+                <th>State</th>
+                <th>Governor</th>
+            </tr>
+            <tr>
+                <td>Andhra Pradesh</td>
+                <td>Shri Justice (Retd.) S. Abdul Nazeer</td>
+            </tr>
+            <tr>
+                <td>Arunachal Pradesh</td>
+                <td>Lt. General Kaiwalya Trivikram Parnaik, PVSM, UYSM, YSM (Retired)</td>
+            </tr>
+            <tr>
+                <td>Assam</td>
+                <td>Shri Gulab Chand Kataria</td>
+            </tr>
+            <tr>
+                <td>Bihar</td>
+                <td>Shri Rajendra Vishwanath Arlekar</td>
+            </tr>
+            <tr>
+                <td>Chhattisgarh</td>
+                <td>Shri Biswa Bhusan Harichandan</td>
+            </tr>
+            <tr>
+                <td>Goa</td>
+                <td>Shri P.S. Sreedharan Pillai</td>
+            </tr>
+            <tr>
+                <td>Gujarat</td>
+                <td>Shri Acharya Dev Vrat</td>
+            </tr>
+            <tr>
+                <td>Haryana</td>
+                <td>Shri Bandaru Dattatraya</td>
+            </tr>
+            <tr>
+                <td>Himachal Pradesh</td>
+                <td>Shri Shiv Pratap Shukla</td>
+            </tr>
+            <tr>
+                <td>Jharkhand</td>
+                <td>Shri C.P. Radhakrishnan</td>
+            </tr>
+            <tr>
+                <td>Karnataka</td>
+                <td>Shri Thaawarchand Gehlot</td>
+            </tr>
+            <tr>
+                <td>Kerala</td>
+                <td>Shri Arif Mohammed Khan</td>
+            </tr>
+            <tr>
+                <td>Madhya Pradesh</td>
+                <td>Shri Mangubhai Chhaganbhai Patel</td>
+            </tr>
+            <tr>
+                <td>Maharashtra</td>
+                <td>Shri Ramesh Bais</td>
+            </tr>
+            <tr>
+                <td>Manipur</td>
+                <td>Sushri Anusuiya Uikye</td>
+            </tr>
+            <tr>
+                <td>Meghalaya</td>
+                <td>Shri Phagu Chauhan</td>
+            </tr>
+            <tr>
+                <td>Mizoram</td>
+                <td>Dr. Kambhampati Haribabu</td>
+            </tr>
+            <tr>
+                <td>Nagaland</td>
+                <td>Shri La. Ganesan</td>
+            </tr>
+            <tr>
+                <td>Odisha</td>
+                <td>Shri Raghubar Das</td>
+            </tr>
+            <tr>
+                <td>Punjab</td>
+                <td>Shri Banwarilal Purohit</td>
+            </tr>
+            <tr>
+                <td>Rajasthan</td>
+                <td>Shri Kalraj Mishra</td>
+            </tr>
+            <tr>
+                <td>Sikkim</td>
+                <td>Shri Lakshman Prasad Acharya</td>
+            </tr>
+            <tr>
+                <td>Tamil Nadu</td>
+                <td>Shri R. N. Ravi</td>
+            </tr>
+            <tr>
+                <td>Telangana</td>
+                <td>Shri C.P. Radhakrishnan (Addl. Charge)</td>
+            </tr>
+            <tr>
+                <td>Tripura</td>
+                <td>Shri Indra Sena Reddy Nallu</td>
+            </tr>
+            <tr>
+                <td>Uttar Pradesh</td>
+                <td>Smt. Anandiben Patel</td>
+            </tr>
+            <tr>
+                <td>Uttarakhand</td>
+                <td>Lt. Gen. Gurmit Singh, PVSM, UYSM, AVSM, VSM (Retd.)</td>
+            </tr>
+            <tr>
+                <td>West Bengal</td>
+                <td>Dr. C.V. Ananda Bose</td>
+            </tr>
+        </table>
+    </div>
+    <div id="content-7" class="content-item">
+      
+      <table id="t1" >
+        <tr>
+            <td><h3><b> learn programming </b></h3></td>
+        </tr>
+        <tr>
+            <td><button type="submit"><a href="https://www.w3schools.com/">W3SCHOOLS</a></button></td>
+            <td><button type="submit"><a href="https://www.geeksforgeeks.org/courses/gate-ds-and-ai?source=google&medium=cpc&device=c&keyword=gate%20geeksforgeeks&matchtype=b&campaignid=19710694532&adgroup=164787828848&gad_source=1&gclid=CjwKCAjwkuqvBhAQEiwA65XxQIUwbjCAqjnzsGZuZXdUpbHRkBwhBx3rtxlKtLrh0shyTHMn-Jk0SxoC8McQAvD_BwE">geeksforgeeks</a> </button></td>
+            <td><button type="submit"><a href="https://www.freecodecamp.org/">FreeCodeCamp</a></button></td>
+        
+            
+        </tr>
+        <tr>
+            <td><h3><b>For practice </b></h3></td>
+        </tr>
+        <tr>
+            <td><button type="submit"><a href="https://www.hackerrank.com/">HackerRank</a> </button></td>
+            <td><button type="submit"><a href="https://leetcode.com/">Leet Code</a></button></td>
+            <td><button type="submit"><a href="https://www.codechef.com/">Code Chef</a></button></td>
+        </tr>
+        <tr>
+            <td><h3><b>youtube channels</b></h3></td>
+        </tr>
+        <tr>
+            <td><button type="submit"><a href="https://www.youtube.com/channel/UCeVMnSShP_Iviwkknt83cww">CodeWithHarry</a></button></td>
+            <td><button type="submit"><a href="https://www.youtube.com/@ApnaCollegeOfficial">AppnaCollege</a></button></td><br>
+            <td><button type="submit"><a href="https://www.youtube.com/channel/UCGlUPA9kZBU0fEAJbbXwT1Q">LearnVern</a></button></td>
+           <tr>
+            <td><button type="submit"><a href="https://www.youtube.com/channel/UCc5FkTYiWH5L3Gk5IyW6Rmw">Geeky Shows</a></button></td>
+            <td><button type="submit"><a href="https://www.youtube.com/@freecodecamp">freeCodeCamp</a></button></td>
+            <td><button type="submit"><a href="https://www.youtube.com/@programmingwithmosh">Programming with Mosh</a></button></td>
+            
+           </tr>
+           <tr>
+            <td><button type="submit"><a href="https://www.youtube.com/channel/UCrkQMtWNtuq-1j0q8c2RVeQ">Harshit vashisth</a></button></td>
+        </tr>
+      </table>
+    </div>
+    <div id="content-9" class="content-item">
+     <h2>General question of Biology </h2>
+     <table id="t1">
+        <tr>
+          <th>Question</th>
+          <th>Answer</th>
+        </tr>
+        <tr>
+          <td>What is the basic unit of life?</td>
+          <td>Cell</td>
+        </tr>
+        <tr>
+          <td>What is the process by which green plants make their own food using sunlight?</td>
+          <td>Photosynthesis</td>
+        </tr>
+        <tr>
+          <td>What is the name of the molecule that carries genetic information in living organisms?</td>
+          <td>DNA (Deoxyribonucleic acid)</td>
+        </tr>
+        <tr>
+          <td>What is the powerhouse of the cell?</td>
+          <td>Mitochondria</td>
+        </tr>
+        <tr>
+          <td>What is the process by which organisms break down food to release energy?</td>
+          <td>Cellular respiration</td>
+        </tr>
+        <tr>
+          <td>What is the outermost layer of the Earth's atmosphere called where most weather phenomena occur?</td>
+          <td>Troposphere</td>
+        </tr>
+        <tr>
+          <td>What is the process by which organisms evolve and adapt to their environment over time?</td>
+          <td>Evolution</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which plants release water vapor into the atmosphere?</td>
+          <td>Transpiration</td>
+        </tr>
+        <tr>
+          <td>What is the largest organ in the human body?</td>
+          <td>Skin</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which cells divide to produce new cells?</td>
+          <td>Cell division or mitosis</td>
+        </tr>
+        <tr>
+          <td>What is the primary function of red blood cells in the human body?</td>
+          <td>Transporting oxygen to tissues and organs</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which plants take in water and nutrients from the soil?</td>
+          <td>Absorption</td>
+        </tr>
+        <tr>
+          <td>What is the scientific name for the process of converting nitrogen gas into a form that plants can use?</td>
+          <td>Nitrogen fixation</td>
+        </tr>
+        <tr>
+          <td>What is the name of the fluid that surrounds and protects the brain and spinal cord?</td>
+          <td>Cerebrospinal fluid</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which an organism grows and develops over time?</td>
+          <td>Growth and development</td>
+        </tr>
+        <tr>
+          <td>What is the largest organ inside the human body?</td>
+          <td>Liver</td>
+        </tr>
+        <tr>
+          <td>What is the process by which plants reproduce sexually?</td>
+          <td>Pollination and fertilization</td>
+        </tr>
+        <tr>
+          <td>What is the name of the organelle responsible for protein synthesis in the cell?</td>
+          <td>Ribosome</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which plants release oxygen into the atmosphere?</td>
+          <td>Photosynthesis</td>
+        </tr>
+        <tr>
+          <td>What is the scientific name for the study of animals?</td>
+          <td>Zoology</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which plants respond to light?</td>
+          <td>Phototropism</td>
+        </tr>
+        <tr>
+          <td>What is the name of the tissue that connects bones to other bones in the human body?</td>
+          <td>Ligament</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which plants lose water vapor through small openings in their leaves?</td>
+          <td>Transpiration</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which organisms produce offspring?</td>
+          <td>Reproduction</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which plants take in carbon dioxide and release oxygen?</td>
+          <td>Photosynthesis</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which organisms break down food to obtain energy without using oxygen?</td>
+          <td>Anaerobic respiration</td>
+        </tr>
+        <tr>
+          <td>What is the name of the pigment that gives plants their green color and is involved in photosynthesis?</td>
+          <td>Chlorophyll</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which cells convert glucose into ATP (adenosine triphosphate) to release energy?</td>
+          <td>Cellular respiration</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which plants produce seeds?</td>
+          <td>Reproduction or seed production</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which organisms take in oxygen and release carbon dioxide?</td>
+          <td>Respiration</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which organisms break down food to obtain energy using oxygen?</td>
+          <td>Aerobic respiration</td>
+        </tr>
+        <tr>
+          <td>What is the name of the fluid-filled sac that surrounds and protects a developing embryo?</td>
+          <td>Amniotic sac</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which plants respond to gravity?</td>
+          <td>Gravitropism or geotropism</td>
+        </tr>
+        <tr>
+          <td>What is the name of the hormone that regulates blood sugar levels in the human body?</td>
+          <td>Insulin</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which organisms produce offspring that are genetically identical to the parent?</td>
+          <td>Asexual reproduction</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which organisms produce offspring by combining genetic material from two parents?</td>
+          <td>Sexual reproduction</td>
+        </tr>
+        <tr>
+          <td>What is the name of the system responsible for transporting nutrients and oxygen to cells and removing waste products from the body?</td>
+          <td>Circulatory system</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which organisms maintain a stable internal environment despite external changes?</td>
+          <td>Homeostasis</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which plants shed leaves in response to changes in the environment?</td>
+          <td>Leaf abscission</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which organisms obtain and use energy from their surroundings to carry out life processes?</td>
+          <td>Metabolism</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which organisms break down complex organic molecules into simpler substances to release energy?</td>
+          <td>Digestion</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which organisms excrete waste products from their bodies?</td>
+          <td>Excretion</td>
+        </tr>
+        <tr>
+          <td>What is the name of the system responsible for protecting the body from disease-causing organisms and foreign substances?</td>
+          <td>Immune system</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which organisms respond to changes in their environment?</td>
+          <td>Stimulus response</td>
+        </tr>
+        <tr>
+          <td>What is the name of the hormone that regulates the sleep-wake cycle in humans?</td>
+          <td>Melatonin</td>
+        </tr>
+        <tr>
+          <td>What is the name of the pigment that gives blood its red color and is responsible for carrying oxygen to tissues and organs?</td>
+          <td>Hemoglobin</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which organisms convert sunlight into chemical energy?</td>
+          <td>Photosynthesis</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which organisms break down carbohydrates to release energy?</td>
+          <td>Glycolysis</td>
+        </tr>
+        <tr>
+          <td>What is the name of the process by which cells differentiate into specialized cell types during development?</td>
+          <td>Cell differentiation</td>
+        </tr>
+      </table>
+      
+    </div>
+     <div id="content-11" class="content-item" >
+        <h2>General questions of physics</h2>
+        <table id="t1">
+            <tr>
+              <th>Question</th>
+              <th>Answer</th>
+            </tr>
+            <tr>
+              <td>What is the SI unit of force?</td>
+              <td>Newton (N)</td>
+            </tr>
+            <tr>
+              <td>What is the formula for acceleration?</td>
+              <td>Acceleration (a) = Change in velocity (Δv) / Time taken (Δt)</td>
+            </tr>
+            <tr>
+              <td>What is the relationship between force, mass, and acceleration?</td>
+              <td>Newton's Second Law: F = ma (Force = Mass × Acceleration)</td>
+            </tr>
+            <tr>
+              <td>What is the SI unit of energy?</td>
+              <td>Joule (J)</td>
+            </tr>
+            <tr>
+              <td>What is the law of conservation of energy?</td>
+              <td>Energy cannot be created or destroyed, only transformed from one form to another.</td>
+            </tr>
+            <tr>
+              <td>What is the formula for kinetic energy?</td>
+              <td>Kinetic Energy (KE) = 0.5 × Mass × (Velocity)<sup>2</sup></td>
+            </tr>
+            <tr>
+              <td>What is the formula for potential energy?</td>
+              <td>Potential Energy (PE) = Mass × Gravity × Height</td>
+            </tr>
+            <tr>
+              <td>What is the law of universal gravitation?</td>
+              <td>Every particle attracts every other particle in the universe with a force that is directly proportional to the product of their masses and inversely proportional to the square of the distance between their centers.</td>
+            </tr>
+            <tr>
+              <td>What is the acceleration due to gravity on Earth?</td>
+              <td>Approximately 9.81 m/s<sup>2</sup></td>
+            </tr>
+            <tr>
+              <td>What is the SI unit of power?</td>
+              <td>Watt (W)</td>
+            </tr>
+            <tr>
+              <td>What is the formula for power?</td>
+              <td>Power (P) = Work (W) / Time (t)</td>
+            </tr>
+            <tr>
+              <td>What is the formula for work?</td>
+              <td>Work (W) = Force (F) × Distance (d) × cos(θ) (where θ is the angle between the force and the direction of motion)</td>
+            </tr>
+            <tr>
+              <td>What is Newton's First Law of Motion?</td>
+              <td>An object at rest will stay at rest, and an object in motion will stay in motion with the same speed and in the same direction unless acted upon by an unbalanced force.</td>
+            </tr>
+            <tr>
+              <td>What is Newton's Second Law of Motion?</td>
+              <td>The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass (F = ma).</td>
+            </tr>
+            <tr>
+              <td>What is Newton's Third Law of Motion?</td>
+              <td>For every action, there is an equal and opposite reaction.</td>
+            </tr>
+            <tr>
+              <td>What is momentum?</td>
+              <td>Momentum is the product of an object's mass and its velocity. It is a vector quantity.</td>
+            </tr>
+            <tr>
+              <td>What is the formula for momentum?</td>
+              <td>Momentum (p) = Mass (m) × Velocity (v)</td>
+            </tr>
+            <tr>
+              <td>What is impulse?</td>
+              <td>Impulse is the change in momentum of an object when a force is applied over a period of time.</td>
+            </tr>
+            <tr>
+              <td>What is the formula for impulse?</td>
+              <td>Impulse (J) = Force (F) × Time (Δt)</td>
+            </tr>
+            <tr>
+              <td>What is friction?</td>
+              <td>Friction is the force that opposes the motion of one surface over another.</td>
+            </tr>
+            <tr>
+              <td>What factors affect the force of friction?</td>
+              <td>The force of friction depends on the nature of the surfaces in contact, the force pressing them together (normal force), and sometimes the relative motion between the surfaces.</td>
+            </tr>
+            <tr>
+              <td>What is static friction?</td>
+              <td>Static friction is the frictional force that prevents two surfaces from sliding past each other when no external force is applied.</td>
+            </tr>
+            <tr>
+              <td>What is kinetic friction?</td>
+              <td>Kinetic friction is the frictional force between two surfaces in motion relative to each other.</td>
+            </tr>
+            <tr>
+              <td>What is centripetal force?</td>
+              <td>Centripetal force is the force that keeps an object moving in a circular path, directed towards the center of the circle.</td>
+            </tr>
+            <tr>
+              <td>What is the formula for centripetal force?</td>
+              <td>Centripetal Force (F<sub>c</sub>) = (Mass (m) × (Velocity (v))<sup>2</sup>) / Radius (r)</td>
+            </tr>
+            <tr>
+              <td>What is projectile motion?</td>
+              <td>Projectile motion is the motion of an object thrown or projected into the air, subject only to the force of gravity and air resistance (if present).</td>
+            </tr>
+            <tr>
+              <td>What is the trajectory of a projectile?</td>
+              <td>The trajectory of a projectile is the curved path it follows under the influence of gravity.</td>
+            </tr>
+            <tr>
+              <td>What is the formula for the range of a projectile?</td>
+              <td>Range = (Initial Velocity)<sup>2</sup> × sin(2θ) / g (where θ is the angle of projection and g is the acceleration due to gravity)</td>
+            </tr>
+            <tr>
+              <td>What is the formula for the period of a pendulum?</td>
+              <td>Period (T) = 2π√(Length (L) / g) (where g is the acceleration due to gravity)</td>
+            </tr>
+            <tr>
+              <td>What is the law of reflection?</td>
+              <td>The angle of incidence is equal to the angle of reflection, and both lie in the same plane as the incident ray and the normal.</td>
+            </tr>
+            <tr>
+              <td>What is the law of refraction?</td>
+              <td>The ratio of the sine of the angle of incidence to the sine of the angle of refraction is a constant, known as the refractive index.</td>
+            </tr>
+            <tr>
+              <td>What is the Doppler effect?</td>
+              <td>The change in frequency or wavelength of a wave in relation to an observer who is moving relative to the wave source.</td>
+            </tr>
+            <tr>
+              <td>What is the principle of superposition?</td>
+              <td>When two or more waves overlap, the resultant displacement at any point is equal to the vector sum of the displacements of the individual waves at that point.</td>
+            </tr>
+            <tr>
+              <td>What is resonance?</td>
+              <td>Resonance occurs when the frequency of an external force matches the natural frequency of an object, resulting in a dramatic increase in amplitude.</td>
+            </tr>
+            <tr>
+              <td>What is the formula for wavelength?</td>
+              <td>Wavelength (λ) = Speed of light (c) / Frequency (f)</td>
+            </tr>
+            <tr>
+              <td>What is the formula for frequency?</td>
+              <td>Frequency (f) = Speed of light (c) / Wavelength (λ)</td>
+            </tr>
+            <tr>
+              <td>What is Ohm's Law?</td>
+              <td>Ohm's Law states that the current passing through a conductor between two points is directly proportional to the voltage across the two points, provided the temperature remains constant.</td>
+            </tr>
+            <tr>
+              <td>What is the formula for Ohm's Law?</td>
+              <td>Voltage (V) = Current (I) × Resistance (R)</td>
+            </tr>
+            <tr>
+              <td>What is electrical resistance?</td>
+              <td>Electrical resistance is the opposition to the flow of electric current in a conductor. It is measured in ohms.</td>
+            </tr>
+            <tr>
+              <td>What is electric current?</td>
+              <td>Electric current is the flow of electric charge. It is measured in amperes (A).</td>
+            </tr>
+            <tr>
+              <td>What is voltage?</td>
+              <td>Voltage is the electric potential difference between two points. It is measured in volts (V).</td>
+            </tr>
+            <tr>
+              <td>What is capacitance?</td>
+              <td>Capacitance is the ability of a system to store an electric charge. It is measured in farads (F).</td>
+            </tr>
+            <tr>
+              <td>What is inductance?</td>
+              <td>Inductance is the property of an electrical conductor by which a change in current flowing through it induces an electromotive force (emf) in both the conductor itself and in any nearby conductors.</td>
+            </tr>
+            <tr>
+              <td>What is the SI unit of electric charge?</td>
+              <td>Coulomb (C)</td>
+            </tr>
+            <tr>
+              <td>What is the formula for electric charge?</td>
+              <td>Electric Charge (Q) = Current (I) × Time (t)</td>
+            </tr>
+            <tr>
+              <td>What is the formula for electric power?</td>
+              <td>Electric Power (P) = Voltage (V) × Current (I)</td>
+            </tr>
+            <tr>
+              <td>What is the SI unit of electric power?</td>
+              <td>Watt (W)</td>
+            </tr>
+          </table> 
+    </div> 
+    <div id="content-14" class="content-item">
+   <h2>here you can request for notes,sources etc which will be helpful to you by filling below</h2>
+   <form id="myForm">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="need">Need:</label><br>
+    <textarea id="need" name="need" required></textarea><br><br>
+    
+    <button type="submit">Submit</button>
+    <button type="button" onclick="resetForm()">Reset</button>
+  </form> 
+  </div>
+  <div id="content-1" class="content-item">
+  <h2>Presidents of India  from first to current </h2>
+  <table id="t1">
+    <tr>
+      <th>Name</th>
+      <th>Years in Office</th>
+    </tr>
+    <tr>
+      <td>Rajendra Prasad</td>
+      <td>1950–1962</td>
+    </tr>
+    <tr>
+      <td>Sarvepalli Radhakrishnan</td>
+      <td>1962–1967</td>
+    </tr>
+    <tr>
+      <td>Zakir Husain</td>
+      <td>1967–1969</td>
+    </tr>
+    <tr>
+      <td>Varahagiri Venkata Giri</td>
+      <td>1969–1974</td>
+    </tr>
+    <tr>
+      <td>Fakhruddin Ali Ahmed</td>
+      <td>1974–1977</td>
+    </tr>
+    <tr>
+      <td>Basappa Danappa Jatti (Acting President)</td>
+      <td>1977</td>
+    </tr>
+    <tr>
+      <td>Neelam Sanjiva Reddy</td>
+      <td>1977–1982</td>
+    </tr>
+    <tr>
+      <td>Giani Zail Singh</td>
+      <td>1982–1987</td>
+    </tr>
+    <tr>
+      <td>Ramaswamy Venkataraman</td>
+      <td>1987–1992</td>
+    </tr>
+    <tr>
+      <td>Shankar Dayal Sharma</td>
+      <td>1992–1997</td>
+    </tr>
+    <tr>
+      <td>Kocheril Raman Narayanan</td>
+      <td>1997–2002</td>
+    </tr>
+    <tr>
+      <td>Avul Pakir Jainulabdeen Abdul Kalam</td>
+      <td>2002–2007</td>
+    </tr>
+    <tr>
+      <td>Pratibha Patil</td>
+      <td>2007–2012</td>
+    </tr>
+    <tr>
+      <td>Pranab Mukherjee</td>
+      <td>2012–2017</td>
+    </tr>
+    <tr>
+      <td>Ram Nath Kovind (as of January 2022)</td>
+      <td>2017–2022</td>
+    </tr>
+    <tr>
+        <td>Droupadi Murmu</td>
+        <td>2022-present</td>
+    </tr>
+  </table>
+  
+  </div>
+  <div id="content-2" class="content-item">
+    <h2>Prime Ministers from first to current </h2>
+    <table id="t1">
+        <thead>
+          <tr>
+            <th>Prime Minister</th>
+            <th>Term</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jawaharlal Nehru</td>
+            <td>15 August 1947 – 27 May 1964</td>
+          </tr>
+          <tr>
+            <td>Gulzarilal Nanda (acting)</td>
+            <td>27 May 1964 – 9 June 1964</td>
+          </tr>
+          <tr>
+            <td>Lal Bahadur Shastri</td>
+            <td>9 June 1964 – 11 January 1966</td>
+          </tr>
+          <tr>
+            <td>Gulzarilal Nanda (acting)</td>
+            <td>11 January 1966 – 24 January 1966</td>
+          </tr>
+          <tr>
+            <td>Indira Gandhi</td>
+            <td>24 January 1966 – 24 March 1977</td>
+          </tr>
+          <tr>
+            <td>Morarji Desai</td>
+            <td>24 March 1977 – 28 July 1979</td>
+          </tr>
+          <tr>
+            <td>Charan Singh</td>
+            <td>28 July 1979 – 14 January 1980</td>
+          </tr>
+          <tr>
+            <td>Indira Gandhi</td>
+            <td>14 January 1980 – 31 October 1984</td>
+          </tr>
+          <tr>
+            <td>Rajiv Gandhi</td>
+            <td>31 October 1984 – 2 December 1989</td>
+          </tr>
+          <tr>
+            <td>Vishwanath Pratap Singh</td>
+            <td>2 December 1989 – 10 November 1990</td>
+          </tr>
+          <tr>
+            <td>Chandra Shekhar</td>
+            <td>10 November 1990 – 21 June 1991</td>
+          </tr>
+          <tr>
+            <td>P. V. Narasimha Rao</td>
+            <td>21 June 1991 – 16 May 1996</td>
+          </tr>
+          <tr>
+            <td>Atal Bihari Vajpayee</td>
+            <td>16 May 1996 – 1 June 1996</td>
+          </tr>
+          <tr>
+            <td>H. D. Deve Gowda</td>
+            <td>1 June 1996 – 21 April 1997</td>
+          </tr>
+          <tr>
+            <td>I. K. Gujral</td>
+            <td>21 April 1997 – 19 March 1998</td>
+          </tr>
+          <tr>
+            <td>Atal Bihari Vajpayee</td>
+            <td>19 March 1998 – 22 May 2004</td>
+          </tr>
+          <tr>
+            <td>Manmohan Singh</td>
+            <td>22 May 2004 – 26 May 2014</td>
+          </tr>
+          <tr>
+            <td>Narendra Modi</td>
+            <td>26 May 2014 – present</td>
+          </tr>
+        </tbody>
+      </table>
+      
+  </div>
+  <div id="content-10" class="content-item">
+<h2>general questions of Chemistry </h2>
+<table id="t1">
+    <tr>
+      <th>Question</th>
+      <th>Answer</th>
+    </tr>
+    <tr>
+      <td>What is the chemical symbol for water?</td>
+      <td>H<sub>2</sub>O</td>
+    </tr>
+    <tr>
+      <td>What is the atomic number of carbon?</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>What is the chemical formula for table salt?</td>
+      <td>NaCl</td>
+    </tr>
+    <tr>
+      <td>What is the process by which a solid changes directly into a gas called?</td>
+      <td>Sublimation</td>
+    </tr>
+    <tr>
+      <td>What is the smallest unit of an element that retains the properties of that element?</td>
+      <td>Atom</td>
+    </tr>
+    <tr>
+      <td>What is the chemical formula for hydrogen peroxide?</td>
+      <td>H<sub>2</sub>O<sub>2</sub></td>
+    </tr>
+    <tr>
+      <td>What is the SI unit of temperature?</td>
+      <td>Kelvin (K)</td>
+    </tr>
+    <tr>
+      <td>What is the chemical formula for ammonia?</td>
+      <td>NH<sub>3</sub></td>
+    </tr>
+    <tr>
+      <td>What is the study of the composition, structure, properties, and reactions of matter called?</td>
+      <td>Chemistry</td>
+    </tr>
+    <tr>
+      <td>What is the chemical symbol for gold?</td>
+      <td>Au</td>
+    </tr>
+    <tr>
+      <td>What is the pH value of a neutral solution?</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>What is the chemical formula for sulfuric acid?</td>
+      <td>H<sub>2</sub>SO<sub>4</sub></td>
+    </tr>
+    <tr>
+      <td>What is the process of breaking down a compound into its constituent elements called?</td>
+      <td>Decomposition</td>
+    </tr>
+    <tr>
+      <td>What is the chemical symbol for iron?</td>
+      <td>Fe</td>
+    </tr>
+    <tr>
+      <td>What is the process of combining two or more substances to form a new compound called?</td>
+      <td>Synthesis or Combination</td>
+    </tr>
+    <tr>
+      <td>What is Avogadro's number?</td>
+      <td>Approximately 6.022 × 10<sup>23</sup>, representing the number of atoms or molecules in one mole of a substance.</td>
+    </tr>
+    <tr>
+      <td>What is the chemical formula for carbon dioxide?</td>
+      <td>CO<sub>2</sub></td>
+    </tr>
+    <tr>
+      <td>What is the chemical name for baking soda?</td>
+      <td>Sodium bicarbonate</td>
+    </tr>
+    <tr>
+      <td>What is the chemical formula for methane?</td>
+      <td>CH<sub>4</sub></td>
+    </tr>
+    <tr>
+      <td>What is the process of a liquid changing into a gas at the surface called?</td>
+      <td>Evaporation</td>
+    </tr>
+    <tr>
+      <td>What is the chemical formula for ethanol (drinking alcohol)?</td>
+      <td>C<sub>2</sub>H<sub>5</sub>OH</td>
+    </tr>
+    <tr>
+      <td>What is the lightest element in the periodic table?</td>
+      <td>Hydrogen</td>
+    </tr>
+    <tr>
+      <td>What is the chemical formula for hydrochloric acid?</td>
+      <td>HCl</td>
+    </tr>
+    <tr>
+      <td>What is the common name for calcium carbonate?</td>
+      <td>Limestone</td>
+    </tr>
+    <tr>
+      <td>What is the chemical formula for sucrose (table sugar)?</td>
+      <td>C<sub>12</sub>H<sub>22</sub>O<sub>11</sub></td>
+    </tr>
+    <tr>
+      <td>What is the process of a gas changing directly into a solid called?</td>
+      <td>Deposition</td>
+    </tr>
+    <tr>
+      <td>What is the chemical symbol for silver?</td>
+      <td>Ag</td>
+    </tr>
+    <tr>
+      <td>What is the process of a substance changing from a solid directly to a gas without passing through the liquid phase called?</td>
+      <td>Sublimation</td>
+    </tr>
+    <tr>
+      <td>What is the chemical formula for sodium hydroxide?</td>
+      <td>NaOH</td>
+    </tr>
+    <tr>
+      <td>What is the chemical symbol for potassium?</td>
+      <td>K</td>
+    </tr>
+    <tr>
+      <td>What is the process of a gas changing into a liquid called?</td>
+      <td>Condensation</td>
+    </tr>
+    <tr>
+      <td>What is the chemical formula for carbon monoxide?</td>
+      <td>CO</td>
+    </tr>
+    <tr>
+      <td>What is the chemical name for common salt?</td>
+      <td>Sodium chloride</td>
+    </tr>
+    <tr>
+      <td>What is the chemical symbol for oxygen?</td>
+      <td>O<sub>2</sub></td>
+    </tr>
+    <tr>
+      <td>What is the process of a liquid changing into a solid called?</td>
+      <td>Freezing</td>
+    </tr>
+    <tr>
+      <td>What is the chemical formula for sulfur dioxide?</td>
+      <td>SO<sub>2</sub></td>
+    </tr>
+    <tr>
+      <td>What is the chemical name for quicklime?</td>
+      <td>Calcium oxide</td>
+    </tr>
+    <tr>
+      <td>What is the chemical symbol for nitrogen?</td>
+      <td>N<sub>2</sub></td>
+    </tr>
+    <tr>
+      <td>What is the process of a solid changing into a liquid called?</td>
+      <td>Melting</td>
+    </tr>
+    <tr>
+      <td>What is the chemical formula for carbonic acid?</td>
+      <td>H<sub>2</sub>CO<sub>3</sub></td>
+    </tr>
+    <tr>
+      <td>What is the chemical symbol for helium?</td>
+      <td>He</td>
+    </tr>
+    <tr>
+      <td>What is the process of a liquid changing into a gas throughout its volume called?</td>
+      <td>Boiling</td>
+    </tr>
+    <tr>
+      <td>What is the chemical formula for hydrogen sulfide?</td>
+      <td>H<sub>2</sub>S</td>
+    </tr>
+    <tr>
+      <td>What is the chemical name for rust?</td>
+      <td>Iron oxide</td>
+    </tr>
+    <tr>
+      <td>What is the chemical symbol for lead?</td>
+      <td>Pb</td>
+    </tr>
+    <tr>
+      <td>What is the process of a gas changing into a liquid called?</td>
+      <td>Liquefaction</td>
+    </tr>
+    <tr>
+      <td>What is the chemical formula for acetic acid (vinegar)?</td>
+      <td>CH<sub>3</sub>COOH</td>
+    </tr>
+    <tr>
+      <td>What is the chemical symbol for mercury?</td>
+      <td>Hg</td>
+    </tr>
+    <tr>
+      <td>What is the process of a gas changing into a solid called?</td>
+      <td>Deposition</td>
+    </tr>
+    <tr>
+      <td>What is the chemical formula for nitric acid?</td>
+      <td>HNO<sub>3</sub></td>
+    </tr>
+  </table>
+    
+</div>
+     </div>
+    <script>
+       const buttons = document.querySelectorAll('.nav-button');
+       const contentItems = document.querySelectorAll('.content-item');
+       buttons.forEach((button) => {
+         button.addEventListener('click', () => {
+           contentItems.forEach((item) => {
+             item.style.display = 'none';
+           });// Remove the "active" class from all buttons
+           buttons.forEach((btn) => {
+              btn.classList.remove('active');
+           });            // Show the corresponding content
+           const contentId = button.getAttribute('data-content');
+           const content = document.getElementById(contentId);
+           content.style.display = 'block';
+           button.classList.add('active');
+         });
+       });  // Initially show the content for the first button (if needed)
+       const firstButton = buttons[0];
+       firstButton.click();
+       
+       function resetForm() {
+  document.getElementById("myForm").reset();
+}
+
+document.getElementById("myForm").addEventListener("submit", function(event) {
+  // Prevent default form submission
+  event.preventDefault();
+  
+  // Get the values of the input fields
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var need = document.getElementById("need").value;
+  
+  if (name.trim() === '' || email.trim() === '' || need.trim() === '') {
+    // If any of the fields are empty, display a required message
+    alert("All fields are required.");
+  } else {
+    // If all fields are filled, display the submitted message
+    // var message = "Name: " + name + "\nEmail: " + email + "\nNeed: " + need;
+    alert("Sent message");
+    // Here you can add code to submit the form data to your server if needed
+  }
+});
+
+     </script>
+</body>
+</html>
+
